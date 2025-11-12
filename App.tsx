@@ -1,3 +1,5 @@
+// FIX: Add a triple-slash directive to explicitly include React Three Fiber's types to fix JSX element recognition.
+/// <reference types="@react-three/fiber" />
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Stars } from '@react-three/drei';
@@ -89,9 +91,6 @@ const App: React.FC = () => {
 
     return (
         <div className="w-screen h-screen bg-gray-900 text-white">
-            <div className="absolute top-0 left-0 z-10 p-4 w-full flex justify-center">
-                 <h1 className="text-2xl md:text-3xl font-bold text-center bg-black bg-opacity-30 px-4 py-2 rounded-lg">Địa Hình 3D Tương Tác</h1>
-            </div>
             <Canvas
                 camera={{ position: [25, 25, 25], fov: 50 }}
                 shadows

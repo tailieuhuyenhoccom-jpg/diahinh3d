@@ -1,3 +1,5 @@
+// FIX: Add a triple-slash directive to explicitly include React Three Fiber's types to fix JSX element recognition.
+/// <reference types="@react-three/fiber" />
 import React, { useRef, useMemo, useCallback } from 'react';
 import { type ThreeEvent } from '@react-three/fiber';
 import * as THREE from 'three';
