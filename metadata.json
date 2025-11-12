@@ -1,0 +1,5 @@
+{
+  "name": "Địa hình 3D - V2",
+  "description": "A web application that displays a 3D terrain. Users can rotate the view and modify the terrain's shape by clicking on it.",
+  "requestFramePermissions": []
+}
